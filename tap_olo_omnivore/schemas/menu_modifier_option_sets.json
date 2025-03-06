@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Menu Modifier Option Sets Schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "location_id": {
+      "type": "string"
+    },
+    "menu_modifier_id": {
+      "type": "string"
+    },
+    "modifier_group_id": {
+      "type": "string"
+    },
+    "maximum": {
+      "type": "integer"
+    },
+    "minimum": {
+      "type": "integer"
+    },
+    "required": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "id"
+  ]
+}

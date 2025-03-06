@@ -1,0 +1,166 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Locations Schema",
+  "type": "object",
+  "properties": {
+    "address_city": {
+      "type": "string"
+    },
+    "address_country": {
+      "type": "string"
+    },
+    "address_state": {
+      "type": "string"
+    },
+    "address_street1": {
+      "type": "string"
+    },
+    "address_street2": {
+      "type": "string"
+    },
+    "address_zip": {
+      "type": "string"
+    },
+    "agent_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "concept_name": {
+      "type": "string"
+    },
+    "created": {
+      "type": "integer"
+    },
+    "custom_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "development": {
+      "type": "boolean"
+    },
+    "display_name": {
+      "type": "string"
+    },
+    "google_place_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "health_agent_average_cpu": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "health_agent_average_memory": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "health_agent_healthy": {
+      "type": "boolean"
+    },
+    "health_agent_processes": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "health_healthy": {
+      "type": "boolean"
+    },
+    "health_pos_ordering": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "health_system_average_cpu": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "health_system_average_memory": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "health_system_healthy": {
+      "type": "boolean"
+    },
+    "health_tickets_response_time": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "health_tickets_status": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "longitude": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "modified": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "phone": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "pos_type": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "timezone": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "updater_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "website": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ]
+}

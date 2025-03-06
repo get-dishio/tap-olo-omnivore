@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Menu Modifier Categories Schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "location_id": {
+      "type": "string"
+    },
+    "menu_modifier_id": {
+      "type": "string"
+    },
+    "menu_category_type_id": {
+       "type": "string"
+    },
+    "parent_category_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "pos_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ]
+}

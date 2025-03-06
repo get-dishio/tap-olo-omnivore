@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Out of Stock Menu Modifiers Schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "location_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "in_stock": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "id"
+  ]
+}

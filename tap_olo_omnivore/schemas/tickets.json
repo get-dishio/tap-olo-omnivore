@@ -1,0 +1,142 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Tickets Schema",
+  "type": "object",
+  "properties": {
+    "auto_send": {
+      "type": "boolean"
+    },
+    "location_id": {
+      "type": "string"
+    },
+    "employee_id": {
+      "type": "string"
+    },
+    "order_type_id": {
+      "type": "string"
+    },
+    "revenue_center_id": {
+      "type": "string"
+    },
+    "table_id": {
+      "type": "string"
+    },
+    "terminal_id": {
+      "type": "string"
+    },
+    "closed_at": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "correlation": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "fire_date": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "fire_time": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "guest_count": {
+      "type": "integer"
+    },
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "open": {
+      "type": "boolean"
+    },
+    "opened_at": {
+      "type": "integer"
+    },
+    "pos_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ready_date": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ready_time": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ticket_number": {
+      "type": [
+        "string",
+        "integer"
+      ]
+    },
+    "totals_discounts": {
+      "type": "integer"
+    },
+    "totals_due": {
+      "type": "integer"
+    },
+    "totals_exclusive_tax": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "totals_inclusive_tax": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "totals_items": {
+      "type": "integer"
+    },
+    "totals_other_charges": {
+      "type": "integer"
+    },
+    "totals_paid": {
+      "type": "integer"
+    },
+    "totals_service_charges": {
+      "type": "integer"
+    },
+    "totals_sub_total": {
+      "type": "integer"
+    },
+    "totals_tax": {
+      "type": "integer"
+    },
+    "totals_tips": {
+      "type": "integer"
+    },
+    "totals_total": {
+      "type": "integer"
+    },
+    "void": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "id"
+  ]
+}

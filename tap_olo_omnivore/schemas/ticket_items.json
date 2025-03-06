@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Ticket Items Schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "location_id": {
+      "type": "string"
+    },
+    "ticket_id": {
+      "type": "string"
+    },
+    "item_order_mode_id": {
+       "type": "string"
+    },
+    "menu_item_id": {
+      "type": "string"
+    },
+    "comment": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "included_tax": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "quantity": {
+      "type": "number"
+    },
+    "seat": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sent": {
+      "type": "boolean"
+    },
+    "sent_at": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "split": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "id"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Menu Modifiers Schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "location_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "open": {
+      "type": "boolean"
+    },
+    "pos_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "price_per_unit": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "in_stock": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ]
+}

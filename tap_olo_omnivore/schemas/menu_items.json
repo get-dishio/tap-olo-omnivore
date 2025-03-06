@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Menu Items Schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "location_id": {
+      "type": "string"
+    },
+    "barcodes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "in_stock": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "open": {
+      "type": "boolean"
+    },
+    "open_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "pos_id": {
+      "type": "string"
+    },
+    "price_per_unit": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "id"
+  ]
+}

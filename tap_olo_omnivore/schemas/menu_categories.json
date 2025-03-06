@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Menu Categories Schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "location_id": {
+      "type": "string"
+    },
+    "menu_category_type_id": {
+       "type": "string"
+    },
+    "parent_category_id": {
+      "type": "string"
+    },
+    "level": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "pos_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id"
+  ]
+}

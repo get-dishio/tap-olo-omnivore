@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Tables Schema",
+  "type": "object",
+  "properties": {
+    "available": {
+      "type": "boolean"
+    },
+    "location_id": {
+       "type": "string"
+    },
+    "revenue_center_id": {
+       "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "number": {
+      "type": "integer"
+    },
+    "pos_id": {
+      "type": "string"
+    },
+    "seats": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "id"
+  ]
+}
