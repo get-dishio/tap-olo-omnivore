@@ -9,7 +9,7 @@ class LocationsStream(OloOmnivoreStream):
     name = "locations"
     path = "/locations"
     primary_keys = ["id"]
-    replication_key = "modified"
+    replication_key = None
 
     def get_child_context(self, record: dict, context: [dict]) -> dict:
         """Return a context dictionary for child streams."""

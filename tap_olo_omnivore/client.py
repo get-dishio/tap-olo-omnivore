@@ -1,6 +1,7 @@
 """REST client handling, including OloOmnivoreStream base class."""
 
 from __future__ import annotations
+from datetime import datetime
 
 import decimal
 import json
@@ -54,6 +55,25 @@ def flatten_nested_objects(data, parent_key='', sep='_'):
         else:
             items.append((new_key, v))
     return dict(items)
+
+def convert_to_timestamp(value):
+    # If the value is already an integer (Unix timestamp)
+    if isinstance(value, int):
+        return value
+    # If the value is a string that can be converted to an integer (Unix timestamp in string form)
+    elif isinstance(value, str):
+        # Try converting the string to an integer (it might be a Unix timestamp in string form)
+        try:
+            return int(value)
+        except ValueError:
+            # If it's not an integer string, try parsing it as an ISO 8601 datetime string
+            try:
+                dt = datetime.strptime(value, "%Y-%m-%dT%H:%M:%S.%fZ")
+                return int(dt.timestamp())
+            except ValueError:
+                raise ValueError("The starting value is not valid ISO 8601 or Unix timestamp")
+    else:
+        raise ValueError("The starting value is neither an integer nor a valid string.")
 
 class OloOmnivoreStream(RESTStream):
     """Omnivore stream base class for accessing the Omnivore API.
@@ -120,6 +140,7 @@ class OloOmnivoreStream(RESTStream):
             params.update(dict(parse_qsl(next_page_token.query)))
         starting_timestamp = self.get_starting_replication_key_value(context)
         if self.replication_key and starting_timestamp:
+            starting_timestamp = convert_to_timestamp(starting_timestamp)
             params["where"] = f"gte({self.replication_key},{starting_timestamp})"
         return params
 
