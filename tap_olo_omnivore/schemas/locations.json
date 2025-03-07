@@ -4,22 +4,40 @@
   "type": "object",
   "properties": {
     "address_city": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "address_country": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "address_state": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "address_street1": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "address_street2": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "address_zip": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "agent_version": {
       "type": [
@@ -28,10 +46,16 @@
       ]
     },
     "concept_name": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "created": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "custom_id": {
       "type": [
@@ -40,10 +64,16 @@
       ]
     },
     "development": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "display_name": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "google_place_id": {
       "type": [
@@ -64,7 +94,10 @@
       ]
     },
     "health_agent_healthy": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "health_agent_processes": {
       "type": [
@@ -73,7 +106,10 @@
       ]
     },
     "health_healthy": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "health_pos_ordering": {
       "type": [
@@ -94,7 +130,10 @@
       ]
     },
     "health_system_healthy": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "health_tickets_response_time": {
       "type": [
@@ -103,10 +142,16 @@
       ]
     },
     "health_tickets_status": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "latitude": {
       "type": [
@@ -121,13 +166,22 @@
       ]
     },
     "modified": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "name": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "owner": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "phone": {
       "type": [
@@ -136,10 +190,16 @@
       ]
     },
     "pos_type": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "status": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "timezone": {
       "type": [

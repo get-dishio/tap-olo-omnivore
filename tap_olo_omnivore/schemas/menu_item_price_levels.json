@@ -4,10 +4,16 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "location_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "barcodes": {
       "type": [
@@ -16,13 +22,22 @@
       ]
     },
     "menu_item_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "name": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "price_per_unit": {
-      "type": "integer"
+     "type": [
+        "integer",
+        "null"
+      ]
     }
   },
   "required": [

@@ -4,19 +4,34 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "location_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "ticket_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "name": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "value": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "comment": {
       "type": [

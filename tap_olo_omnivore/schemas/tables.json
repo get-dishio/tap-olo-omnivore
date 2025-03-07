@@ -4,28 +4,52 @@
   "type": "object",
   "properties": {
     "available": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "location_id": {
-       "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "revenue_center_id": {
-       "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "name": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "number": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "pos_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "seats": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     }
   },
   "required": [

@@ -4,31 +4,58 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "location_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "ticket_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "approving_employee_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "menu_item_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "void_type_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "name": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "price": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "quantity": {
-      "type": "number"
+      "type": [
+        "number",
+        "null"
+      ]
     },
     "comment": {
       "type": [

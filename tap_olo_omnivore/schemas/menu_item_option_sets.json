@@ -4,25 +4,46 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "location_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "menu_item_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "modifier_group_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "maximum": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "minimum": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "required": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     }
   },
   "required": [

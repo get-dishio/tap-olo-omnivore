@@ -4,19 +4,34 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "location_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "ticket_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "tender_type_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "amount": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "change": {
       "type": [
@@ -49,10 +64,16 @@
       ]
     },
     "tip": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "type": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     }
   },
   "required": [

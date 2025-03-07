@@ -4,25 +4,46 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "location_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "ticket_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "ticket_item_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "menu_modifier_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "modifier_group_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "name": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "comment": {
       "type": [
@@ -31,10 +52,16 @@
       ]
     },
     "price": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "quantity": {
-      "type": "number"
+      "type": [
+        "number",
+        "null"
+      ]
     }
   },
   "required": [

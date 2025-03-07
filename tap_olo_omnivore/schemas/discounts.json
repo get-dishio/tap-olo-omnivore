@@ -4,32 +4,56 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "location_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "name": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "type": {
-      "type": "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "enum": [
         "dollar",
         "percent"
       ]
     },
     "value": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "available": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "applies_to_item": {
-       "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "applies_to_ticket": {
-       "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "max_amount": {
       "type": [
@@ -62,7 +86,10 @@
       ]
     },
     "open": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "pos_id": {
       "type": [

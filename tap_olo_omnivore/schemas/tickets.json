@@ -4,25 +4,46 @@
   "type": "object",
   "properties": {
     "auto_send": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "location_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "employee_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "order_type_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "revenue_center_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "table_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "terminal_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "closed_at": {
       "type": [
@@ -49,10 +70,16 @@
       ]
     },
     "guest_count": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "name": {
       "type": [
@@ -61,10 +88,16 @@
       ]
     },
     "open": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "opened_at": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "pos_id": {
       "type": [
@@ -91,10 +124,16 @@
       ]
     },
     "totals_discounts": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "totals_due": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "totals_exclusive_tax": {
       "type": [
@@ -109,31 +148,58 @@
       ]
     },
     "totals_items": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "totals_other_charges": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "totals_paid": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "totals_service_charges": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "totals_sub_total": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "totals_tax": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "totals_tips": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "totals_total": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "void": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     }
   },
   "required": [

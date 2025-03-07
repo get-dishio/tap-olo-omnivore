@@ -4,28 +4,52 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "location_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "menu_item_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "menu_category_type_id": {
-       "type": "string"
+       "type": [
+        "string",
+        "null"
+      ]
     },
     "parent_category_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "name": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "pos_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "level": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     }
   },
   "required": [

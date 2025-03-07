@@ -4,22 +4,40 @@
   "type": "object",
   "properties": {
     "location_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "check_name": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "first_name": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "last_name": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "login": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "middle_name": {
       "type": [

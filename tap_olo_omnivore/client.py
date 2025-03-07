@@ -189,7 +189,12 @@ class OloOmnivoreStream(RESTStream):
         otherwise, the first key found will be used. If _embedded is missing, a fallback JSONPath
         is used.
         """
-        json_response = response.json(parse_float=decimal.Decimal)
+        try:
+            json_response = response.json(parse_float=decimal.Decimal)
+        except requests.exceptions.JSONDecodeError as e:
+            self.logger.error("Failed to decode JSON response: %s", e)
+            return iter([])
+
         embedded = json_response.get("_embedded")
         if embedded:
             if self.name in embedded:
