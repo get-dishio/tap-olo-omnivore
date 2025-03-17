@@ -8,7 +8,7 @@ class MenuItemPriceLevelsStream(OloOmnivoreStream):
     """Child stream for retrieving price levels for a given menu item from the Omnivore API."""
 
     name = "menu_item_price_levels"
-    primary_keys = ["id"]
+    primary_keys = ["id", "location_id"]
     replication_key = None
     parent_stream_type = MenuItemsStream
 

@@ -8,7 +8,7 @@ class RevenueCentersStream(OloOmnivoreStream):
     """Stream for retrieving revenue center records from the Omnivore API."""
 
     name = "revenue_centers"
-    primary_keys = ["id"]
+    primary_keys = ["id", "location_id"]
     replication_key = None
     parent_stream_type = LocationsStream
 

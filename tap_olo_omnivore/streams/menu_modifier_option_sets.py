@@ -8,7 +8,7 @@ class MenuModifierOptionSetsStream(OloOmnivoreStream):
     """Child stream for retrieving option sets for a given menu modifier from the Omnivore API."""
 
     name = "menu_modifier_option_sets"
-    primary_keys = ["id"]
+    primary_keys = ["id", "location_id"]
     replication_key = None
     parent_stream_type = MenuModifiersStream
 

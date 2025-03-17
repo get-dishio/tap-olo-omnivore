@@ -9,7 +9,7 @@ class TenderTypesStream(OloOmnivoreStream):
     """Stream for retrieving tender type records from the Omnivore API."""
 
     name = "tender_types"
-    primary_keys = ["id"]
+    primary_keys = ["id", "location_id"]
     replication_key = None
     parent_stream_type = LocationsStream
 

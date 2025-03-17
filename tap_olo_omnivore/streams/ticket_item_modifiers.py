@@ -9,7 +9,7 @@ class TicketItemModifiersStream(OloOmnivoreStream):
     """Child stream for retrieving ticket item modifiers from the Omnivore API."""
 
     name = "ticket_item_modifiers"
-    primary_keys = ["id"]
+    primary_keys = ["id", "location_id"]
     replication_key = None
     parent_stream_type = TicketItemsStream
 

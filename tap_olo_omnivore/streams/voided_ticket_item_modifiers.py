@@ -9,7 +9,7 @@ class VoidedTicketItemModifiersStream(OloOmnivoreStream):
     """Child stream for retrieving modifiers of a voided ticket item from the Omnivore API."""
 
     name = "voided_ticket_item_modifiers"
-    primary_keys = ["id"]
+    primary_keys = ["id", "location_id"]
     replication_key = None
     parent_stream_type = VoidedTicketItemsStream
 

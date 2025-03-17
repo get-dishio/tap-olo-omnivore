@@ -8,7 +8,7 @@ class MenuModifierCategoriesStream(OloOmnivoreStream):
     """Child stream for retrieving categories for a given menu modifier from the Omnivore API."""
 
     name = "menu_modifier_categories"
-    primary_keys = ["id"]
+    primary_keys = ["id", "location_id"]
     replication_key = None
     parent_stream_type = MenuModifiersStream
 

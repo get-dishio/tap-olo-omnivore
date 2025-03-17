@@ -8,7 +8,7 @@ class TicketServiceChargesStream(OloOmnivoreStream):
     """Child stream for retrieving ticket service charges from the Omnivore API."""
 
     name = "ticket_service_charges"
-    primary_keys = ["id"]
+    primary_keys = ["id", "location_id"]
     replication_key = None
     parent_stream_type = TicketsStream
 

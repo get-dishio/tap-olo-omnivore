@@ -8,7 +8,7 @@ class OrderTypesStream(OloOmnivoreStream):
     """Stream for retrieving order type records from the Omnivore API."""
 
     name = "order_types"
-    primary_keys = ["id"]
+    primary_keys = ["id", "location_id"]
     replication_key = None
     parent_stream_type = LocationsStream
 

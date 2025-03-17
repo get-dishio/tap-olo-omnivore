@@ -8,7 +8,7 @@ class TablesStream(OloOmnivoreStream):
     """Stream for retrieving table records from the Omnivore API."""
 
     name = "tables"
-    primary_keys = ["id"]
+    primary_keys = ["id", "location_id"]
     replication_key = None
     parent_stream_type = LocationsStream
 
