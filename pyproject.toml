@@ -34,6 +34,17 @@ s3 = [
 [project.scripts]
 # CLI declaration
 tap-olo-omnivore = 'tap_olo_omnivore.tap:TapOloOmnivore.cli'
+tap-ncr-aloha = 'tap_olo_omnivore.tap:TapOloOmnivore.cli'
+tap-par-brink = 'tap_olo_omnivore.tap:TapOloOmnivore.cli'
+tap-micros-simphony = 'tap_olo_omnivore.tap:TapOloOmnivore.cli'
+tap-micros-3700 = 'tap_olo_omnivore.tap:TapOloOmnivore.cli'
+tap-positouch = 'tap_olo_omnivore.tap:TapOloOmnivore.cli'
+tap-squirrel-systems = 'tap_olo_omnivore.tap:TapOloOmnivore.cli'
+tap-xpient = 'tap_olo_omnivore.tap:TapOloOmnivore.cli'
+tap-maitre-d = 'tap_olo_omnivore.tap:TapOloOmnivore.cli'
+tap-ncr-cloud-connect = 'tap_olo_omnivore.tap:TapOloOmnivore.cli'
+tap-simphony-fe = 'tap_olo_omnivore.tap:TapOloOmnivore.cli'
+tap-simphony-cloud = 'tap_olo_omnivore.tap:TapOloOmnivore.cli'
 
 [dependency-groups]
 dev = [
