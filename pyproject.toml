@@ -35,6 +35,7 @@ s3 = [
 # CLI declaration
 tap-olo-omnivore = 'tap_olo_omnivore.tap:TapOloOmnivore.cli'
 tap-ncr-aloha = 'tap_olo_omnivore.tap:TapOloOmnivore.cli'
+tap-dinerware = 'tap_olo_omnivore.tap:TapOloOmnivore.cli'
 tap-par-brink = 'tap_olo_omnivore.tap:TapOloOmnivore.cli'
 tap-micros-simphony = 'tap_olo_omnivore.tap:TapOloOmnivore.cli'
 tap-micros-3700 = 'tap_olo_omnivore.tap:TapOloOmnivore.cli'
