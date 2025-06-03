@@ -210,10 +210,43 @@ class OloOmnivoreStream(RESTStream):
     ) -> dict | None:
         """Perform post-processing on each record before output.
 
-        In addition to any custom transformations, this method extracts reference IDs from
-        singular _links. Using a generic rule, it skips any link key that ends with "s" or is "self"
-        and for the remaining keys, it appends '_id' to the key and assigns the last segment of the URL.
+        This method first validates that primary and replication keys are present.
+        Then, it extracts reference IDs from singular _links. Using a generic rule,
+        it skips any link key that ends with "s" or is "self" and for the
+        remaining keys, it appends '_id' to the key and assigns the last segment of the URL.
+        Finally, it flattens nested objects.
         """
+        # Validate primary keys
+        if self.primary_keys:
+            for pk in self.primary_keys:
+                pk_value_in_row = row.get(pk)
+                if pk_value_in_row is None:
+                    # Primary key not in row or is None, check context
+                    if context and context.get(pk) is not None:
+                        # Found in context, add it to the row
+                        row[pk] = context[pk]
+                    else:
+                        # Not in row and not in context (or context is None)
+                        self.logger.warning(
+                            f"Stream '{self.name}': Skipping record because primary key '{pk}' is missing or None in both row and context. Record: {row}"
+                        )
+                        return None
+
+        # Validate replication key
+        if self.replication_key:
+            rk_value_in_row = row.get(self.replication_key)
+            if rk_value_in_row is None:
+                # Replication key not in row or is None, check context
+                if context and context.get(self.replication_key) is not None:
+                    # Found in context, add it to the row
+                    row[self.replication_key] = context[self.replication_key]
+                else:
+                    # Not in row and not in context (or context is None)
+                    self.logger.warning(
+                        f"Stream '{self.name}': Skipping record because replication key '{self.replication_key}' is missing or None in both row and context. Record: {row}"
+                    )
+                    return None
+
         links = row.get("_links", {})
         for key, link_obj in links.items():
             # Skip keys that are plural or are exactly "self".
