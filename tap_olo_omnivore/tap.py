@@ -73,6 +73,16 @@ class TapOloOmnivore(Tap):
             title="User Agent",
             description="A custom User-Agent header to send with each request.",
         ),
+        th.Property(
+            "locations",
+            th.ArrayType(
+                th.ObjectType(
+                    th.Property("id", th.StringType, required=True),
+                )
+            ),
+            title="Locations",
+            description="A list of location IDs to sync.",
+        ),
     ).to_dict()
 
     def discover_streams(self) -> list:
