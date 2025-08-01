@@ -83,6 +83,13 @@ class TapOloOmnivore(Tap):
             title="Locations",
             description="A list of location IDs to sync.",
         ),
+        th.Property(
+            "max_pagination",
+            th.IntegerType,
+            default=5,
+            title="Max Pagination",
+            description="The maximum number of pages to paginate through.",
+        ),
     ).to_dict()
 
     def discover_streams(self) -> list:

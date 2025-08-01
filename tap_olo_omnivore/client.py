@@ -67,8 +67,13 @@ def convert_to_timestamp(value):
             return int(value)
         except ValueError:
             # If it's not an integer string, try parsing it as an ISO 8601 datetime string
+            # Handle 'Z' for UTC timezone, which fromisoformat expects as +00:00
+            if value.endswith("Z"):
+                value = value.rstrip("Z")
+
             try:
-                dt = datetime.strptime(value, "%Y-%m-%dT%H:%M:%S.%fZ")
+                # Use fromisoformat for robust ISO 8601 parsing (handles with/without milliseconds)
+                dt = datetime.fromisoformat(value)
                 return int(dt.timestamp())
             except ValueError:
                 raise ValueError("The starting value is not valid ISO 8601 or Unix timestamp")
@@ -122,7 +127,8 @@ class OloOmnivoreStream(RESTStream):
 
     def get_new_paginator(self) -> CustomHATEOASPaginator:
         """Return a new paginator instance using the custom pagination behavior."""
-        return CustomHATEOASPaginator()
+        max_pagination = self.config.get("max_pagination", 10)
+        return CustomHATEOASPaginator(max_pagination=max_pagination)
 
     def get_url_params(
         self,
