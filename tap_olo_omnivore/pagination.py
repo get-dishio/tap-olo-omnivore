@@ -25,7 +25,6 @@ class CustomHATEOASPaginator(BaseHATEOASPaginator):
         It handles exceptions that may occur while trying to parse the response as JSON.
         """
         if self.page_count >= self.max_pagination:
-            self.logger.info(f"Stopping pagination after {self.page_count} pages.")
             return None
         self.page_count += 1
         try:
